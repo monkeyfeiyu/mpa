@@ -1,7 +1,7 @@
 module.exports = {
     title: 'Initialization project',
     port: 9001,
-    publicPath: '/',
+    publicPath: './',
     pathConfig: {
         // favicon: ''
     },
