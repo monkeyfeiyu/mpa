@@ -1,4 +1,4 @@
-const get = (url = '', data = {}, headers = {}) => {
+export const get = (url = '', data = {}, headers = {}) => {
     return new Promise((resolve, reject) => {
         axios.get(url, {
             params: data
@@ -10,7 +10,7 @@ const get = (url = '', data = {}, headers = {}) => {
     });
 };
 
-const post = (url = '', data = {}, headers = {}) => {
+export const post = (url = '', data = {}, headers = {}) => {
     return new Promise((resolve, reject) => {
         axios.post(url, data).then(res => {
             resolve(res.data);
@@ -19,5 +19,3 @@ const post = (url = '', data = {}, headers = {}) => {
         });
     });
 };
-
-export { get, post };
