@@ -1,12 +1,10 @@
 <template>
-    <div class="clearfix wrap headermenu">
-    </div>
+    <div class="clearfix wrap headermenu"></div>
 </template>
 
 <script>
 export default {
-    methods: {
-    }
+    methods: {}
 };
 </script>
 

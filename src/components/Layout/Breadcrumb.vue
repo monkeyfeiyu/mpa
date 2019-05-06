@@ -11,13 +11,13 @@
 </template>
 
 <script>
-import {crumb} from 'data';
+import { crumb } from 'data';
 
 export default {
     data() {
         const path = window.location.pathname.slice(1, -5);
         const data = crumb[path] || [];
-        return {data};
+        return { data };
     },
     methods: {
         getUrl(index) {

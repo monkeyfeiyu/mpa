@@ -4,13 +4,27 @@
             <div class="side-bar-menu-top">
                 <a href="/" class="title">{{pageData.title}}</a>
             </div>
-            <el-menu class="side-bar-menu-list" :default-active="defaultActive" :default-openeds="defaultOpeneds">
-                <el-submenu v-for="(item, index) in menuData" :key="index" :index="`${index}`" :data-index="`${index}`">
+            <el-menu
+                class="side-bar-menu-list"
+                :default-active="defaultActive"
+                :default-openeds="defaultOpeneds"
+            >
+                <el-submenu
+                    v-for="(item, index) in menuData"
+                    :key="index"
+                    :index="`${index}`"
+                    :data-index="`${index}`"
+                >
                     <template slot="title">
                         <i :class="`iconfont icon-${item.icon}`"></i>
                         <span>{{item.text}}</span>
                     </template>
-                    <el-menu-item v-for="(item2, index2) in item.children" :key="index2" :index="`${index}-${index2}`" :data-index="`${index}-${index2}`">
+                    <el-menu-item
+                        v-for="(item2, index2) in item.children"
+                        :key="index2"
+                        :index="`${index}-${index2}`"
+                        :data-index="`${index}-${index2}`"
+                    >
                         <a :href="`${item2.url}.html`">{{item2.text}}</a>
                     </el-menu-item>
                 </el-submenu>
@@ -20,13 +34,13 @@
 </template>
 
 <script>
-import {menu as menuData} from 'data';
+import { menu as menuData } from 'data';
 export default {
     props: {},
     data() {
         let defaultActive = '';
         let defaultOpeneds = [];
-        const {pathname} = location;
+        const { pathname } = location;
         const path = pathname.replace('.html', '');
         if (path !== '/') {
             menuData.forEach((v, i) => {

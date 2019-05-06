@@ -20,4 +20,4 @@ const post = (url = '', data = {}, headers = {}) => {
     });
 };
 
-export {get, post};
+export { get, post };

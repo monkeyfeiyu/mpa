@@ -1,13 +1,13 @@
-import {time} from './time';
+import { time } from './time';
 
 // 格式化数据
 export const formatData = (data, options = {}) => {
-    const ret = {...data};
+    const ret = { ...data };
     Object.entries(data)
         .filter(([k, v]) => k in options)
         .forEach(([k, v]) => {
             const option = options[k];
-            const {type, defaultValue} = option;
+            const { type, defaultValue } = option;
             if (['number', 'date'].includes(type)) {
                 if (v === '') {
                     ret[k] = defaultValue;

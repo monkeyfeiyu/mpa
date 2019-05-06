@@ -18,7 +18,7 @@ export const time = (date, format = 'yyyy-MM-dd HH:mm:ss') => {
 };
 
 // 距离当前日期
-export const getDateFromNow = ({year = 0, month = 0, day = 0}) => {
+export const getDateFromNow = ({ year = 0, month = 0, day = 0 }) => {
     const dt = new Date();
     dt.setFullYear(dt.getFullYear() + year);
     dt.setDate(dt.getDate() + day);
@@ -26,5 +26,5 @@ export const getDateFromNow = ({year = 0, month = 0, day = 0}) => {
 };
 
 // datePickerOptions.disabledDate
-export const disabledDateFn = ({year = 0, month = 0, day = 0}) => time =>
-    time.getTime() < getDateFromNow({year, month, day});
+export const disabledDateFn = ({ year = 0, month = 0, day = 0 }) => time =>
+    time.getTime() < getDateFromNow({ year, month, day });

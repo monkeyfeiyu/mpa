@@ -1,5 +1,5 @@
 import * as utils from 'utils';
-import {get, post} from 'request';
+import { get, post } from 'request';
 import getService from 'api/getService';
 import postService from 'api/postService';
 
@@ -22,7 +22,7 @@ export const mixin = Vue => {
             Vue.util.defineReactive(this, '$post', post);
             Vue.util.defineReactive(this, '$getService', getService);
             Vue.util.defineReactive(this, '$postService', postService);
-            
+
         }
     });
 };
