@@ -3,15 +3,19 @@
   "version": "1.0.0",
   "author": "monkeyfeiyu",
   "license": "MIT",
-  "dependencies": {
-    "cross-env": "^5.2.0",
-    "parce": "^0.0.45"
-  },
   "scripts": {
     "init": "parce init",
+    "prettier": "npx prettier --write **/src/view/**/*.{js,vue,json,less}",
     "dll": "cross-env NODE_ENV=development parce dll && cross-env NODE_ENV=production parce dll",
     "dev": "cross-env NODE_ENV=development parce dev",
     "build": "cross-env NODE_ENV=production parce build",
     "server": "parce server"
+  },
+  "dependencies": {
+    "cross-env": "^5.2.0",
+    "parce": "^0.0.45"
+  },
+  "devDependencies": {
+    "prettier": "^1.18.1"
   }
 }
