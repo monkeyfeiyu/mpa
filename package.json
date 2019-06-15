@@ -12,10 +12,10 @@
     "server": "parce server"
   },
   "dependencies": {
-    "cross-env": "^5.2.0",
-    "parce": "^0.0.45"
+    "parce": "1.2.7",
+    "vue-template-compiler": "^2.6.10"
   },
   "devDependencies": {
-    "prettier": "^1.18.1"
+    "cross-env": "^5.2.0"
   }
 }
