@@ -8,7 +8,7 @@ export default {
 };
 </script>
 
-<style lang="less">
+<style lang="scss">
 .headermenu {
     height: 60px;
     line-height: 60px;

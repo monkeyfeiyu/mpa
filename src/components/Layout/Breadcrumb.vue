@@ -27,7 +27,7 @@ export default {
 };
 </script>
 
-<style lang="less">
+<style lang="scss">
 .box {
     cursor: default;
     padding: 10px;

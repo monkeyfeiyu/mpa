@@ -70,7 +70,7 @@ export default {
 };
 </script>
 
-<style lang="less">
+<style lang="scss">
 .el-submenu__title {
     padding-left: 15px !important;
 }
@@ -101,7 +101,7 @@ export default {
 }
 </style>
 
-<style lang="less" scoped>
+<style lang="scss" scoped>
 .nav-aside {
     height: 100%;
 }

@@ -1,6 +1,8 @@
 <template>
     <Layout>
-        <div slot="content"></div>
+        <div slot="content">
+            <div>hello</div>
+        </div>
     </Layout>
 </template>
 
@@ -12,5 +14,5 @@ export default {
 };
 </script>
 
-<style lang="less" scoped>
+<style lang="scss" scoped>
 </style>
