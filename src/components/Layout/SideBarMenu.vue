@@ -2,7 +2,7 @@
     <div class="nav-aside">
         <div class="side-bar-menu">
             <div class="side-bar-menu-top">
-                <a href="/" class="title">{{pageData.title}}</a>
+                <a href="/" class="title">标题</a>
             </div>
             <el-menu
                 class="side-bar-menu-list"
